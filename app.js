@@ -174,10 +174,10 @@ app.get("/:customListName", (req, res) => {
 
 
 
-
-
-
-
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 app.listen(3000, (req, res) => {
     console.log("server started: 3000");
 });
