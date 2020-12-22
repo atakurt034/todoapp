@@ -132,10 +132,10 @@ app.post("/delete", (req, res) => {
         }).then((results)=>{
             CustomList.find().then((list)=>{
                 console.log(list.forEach((n)=>{
-                    return n.name
-                }))
-            })
-            res.redirect("/" + results.name)
+                    return n.name;
+                }));
+            });
+            res.redirect("/" + results.name);
         }); 
 
     }
